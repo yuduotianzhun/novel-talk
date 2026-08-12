@@ -23,7 +23,7 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 
 打开 **Settings** 页面，填写模型服务提供商提供的配置。
 
-![Settings](screenshots/settings.png)
+<img src="screenshots/settings.png" width="300">
 
 需要填写：
 
@@ -38,7 +38,8 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 
 回到 Home 页面，点击右上角 **+** 创建新世界。
 
-![Create World](screenshots/create-world.png)
+<img src="screenshots/create-world.png" width="300">
+
 
 输入一句话世界设定即可，例如：
 
@@ -52,17 +53,14 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 
 生成完成后，世界会出现在 Home 页面。
 
-![Home](screenshots/home.png)
+<img src="screenshots/home.png" width="300">
+
 
 点击世界卡片即可进入聊天页面。
 
-![Chat](screenshots/chat.png)
+<img src="screenshots/chat.png" width="300">
 
-在底部输入剧情方向，例如：
-
-> 我决定先调查三楼走廊，寻找广播里提到的管理员。
-
-AI 会继续推进小说剧情。
+在底部输入剧情方向，AI 会继续推进小说剧情。
 
 ---
 
@@ -70,7 +68,7 @@ AI 会继续推进小说剧情。
 
 聊天过程中，可以随时打开 **世界信息** 查看当前状态。
 
-![World Characters](screenshots/world-characters.png)
+<img src="screenshots/world-characters.png" width="300">
 
 可查看：
 
