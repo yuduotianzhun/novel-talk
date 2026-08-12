@@ -85,7 +85,7 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 聊天过程中，可以随时打开 **世界信息** 查看当前状态。
 
 <p align="left">
-  <img src="screenshots/world-event.png" width="300" valign="middle">
+  <img src="screenshots/world-events.png" width="300" valign="middle">
   <span style="font-size: 30px;"> -----→ </span>
  <img src="screenshots/world-characters.png" width="300" valign="middle">
 </p>
