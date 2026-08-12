@@ -64,16 +64,19 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 
 ## 3. 开始故事
 
-生成完成后，世界会出现在 Home 页面。
-
-<img src="screenshots/home.png" width="300">
+生成完成后，世界会出现在 Home 页面。点击世界卡片即可进入聊天页面。
 
 
-点击世界卡片即可进入聊天页面。
+<p align="left">
+  <img src="screenshots/home2.png" width="300" valign="middle">
+  <span style="font-size: 30px;"> -----→ </span>
+ <img src="screenshots/chat.png" width="300" valign="middle">
+</p>
 
-<img src="screenshots/chat.png" width="300">
 
-在底部输入剧情方向，AI 会继续推进小说剧情。
+在底部输入剧情方向，AI 会继续推进小说剧情。附带四个选项和token消耗详情。
+
+<img src="screenshots/result-example.png" width="300">
 
 ---
 
@@ -81,12 +84,15 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 
 聊天过程中，可以随时打开 **世界信息** 查看当前状态。
 
-<img src="screenshots/world-characters.png" width="300">
-
+<p align="left">
+  <img src="screenshots/world-event.png" width="300" valign="middle">
+  <span style="font-size: 30px;"> -----→ </span>
+ <img src="screenshots/world-characters.png" width="300" valign="middle">
+</p>
 可查看：
 
 - **事件**：重要剧情事件
 - **总结**：阶段剧情概览
 - **角色**：主角、NPC 与已登场角色
-- **势力**：组织与阵营关系
-- **剧情**：当前主线推进状态
+- **势力**：战力规划，组织与阵营关系 (该板块其实不太重要让AI在生成世界时规划生成，在信息不足时还是有点勉强，甚至胡说八道)
+- **剧情**：当前主线推进状态（这个是AI自己维护的剧情导演模式，在用户没有给出具体的推进剧情思路时会自己推动剧情）
