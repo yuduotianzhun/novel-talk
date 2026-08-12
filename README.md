@@ -2,9 +2,9 @@
 AI-powered multi-world novel roleplay application built with React Native and Expo.
 
 ## 📖 项目简介
-该项目是AI编程。项目整体流程在后面介绍。项目的具体使用流程请参考 [🚀 快速开始](#-快速开始)。
+该项目是AI辅助编程。项目整体流程在后面介绍。项目的具体使用流程请参考 [🚀 快速开始](#-快速开始)。
 
-这个项目是对话式的小说生成APP，灵感来着于风月那个绅士APP，但是每一轮的我自己体验下来有点少，而且费用还很贵。
+这个项目是对话式的小说生成APP，设计理念是快捷方便。灵感来着于风月那个绅士APP，但是每一轮的我自己体验下来有点少，而且费用还很贵。
 
 所以我在prompt拼接上和AI返回的内容上做了为了减少token消耗的相关处理:  
 （比如在prompt拼接上只取最近两轮的AI返回内容作为衔接上下文，同时让AI每轮都返回发生事件event，npc与用户主视角扮演角色的等相关记忆，并储存在zustand里面作为历史对话记忆源，同时AI返回内容以message用 expo-sqlite 替代 AsyncStorage 做消息持久化，为回看历史或者导出服务），当然我自己做了绅士内容方面的prompt层面的调教。
@@ -32,23 +32,31 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 
 需要填写：
 
-- **API Key**：模型服务的密钥
-- **Base URL**：接口地址
-- **Model**：模型名称（如 DeepSeek、豆包等）
+- **API Key**：前往模型服务商的官方平台实名认证之后，点击创建 API Key，然后填入此处。
+  - [DeepSeek API](https://platform.deepseek.com/)
+  - [火山方舟（豆包）](https://console.volcengine.com/ark)
+- **Base URL**：接口地址（我做了一些正则的适配,所以这个baseurl像图片里面填完整也行）
+  方舟：https://ark.cn-beijing.volces.com/api/v3
+  鲸鱼：https://api.deepseek.com
+- **Model**：模型名称（如 图片中的deepSeek-v4-flash、doubao-seed-2-1-turbo-260628等）
+  以官方发布为准
+- **MAX TOKENS** 是生成内容时最大的消耗token，可以粗略的认为生成字数的限制
+- **Responses API** 这个协议并没有完全完成适配，等之后再摸索了。千万不要勾选这个选项。会报错。
 - 其余参数可保持默认，点击 **保存配置** 即可。
 
 ---
 
 ## 2. 创建小说世界
 
-回到 Home 页面，点击右上角 **+** 创建新世界。
+回到 Home 页面，点击右上角 **+** 创建新世界。跳转创建世界页面。输入内容后点击生成。
 
-<img src="screenshots/create-world.png" width="300">
+<p align="left">
+  <img src="screenshots/home.png" width="300" valign="middle">
+  <span style="font-size: 30px;"> -----→ </span>
+  <img src="screenshots/create-world.png" width="300" valign="middle">
+</p>
 
-
-输入一句话世界设定即可，例如：
-
-> 现代都市中，一群大学生被困在封闭宿舍楼，必须破解规则才能逃离。
+输入世界和角色设定即可，（但还是那句话，给的信息越详细AI返回的内容越贴合你的想象）
 
 点击 **生成世界**，AI 会自动生成世界背景、主角、NPC 与初始剧情。
 
