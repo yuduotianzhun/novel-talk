@@ -91,6 +91,9 @@ AI-powered multi-world novel roleplay application built with React Native and Ex
 </p>
 可查看：
 
+#q交流群：1104648900
+欢迎进群交流项目想法和小说内容
+
 - **事件**：重要剧情事件
 - **总结**：阶段剧情概览
 - **角色**：主角、NPC 与已登场角色
